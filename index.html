@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALZADO</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/9c30631ee1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header >
+        <div class="accordion-container">
+            <div class="accordion">
+                <input type="checkbox" id="accordion-item-1" class="accordion-checkbox">
+                <label for="accordion-item-1" class="accordion-button">Ordenar Por:</label>
+                <div class="accordion-content">
+                    <select>
+                        <option value="precio">Precio</option>
+                        <option value="nombre">Nombre</option>
+                        <option value="popularidad">Popularidad</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+      </header>
+      <menu class="grid-item menu">
+        <nav>
+          <i class="fa-solid fa-heart"></i>
+          <h1>calzado</h1>
+        </nav>
+        <ul class="grid-conteiner">
+          <li>
+            <a href="#perfume"><p>Inicio</p></a>
+          </li>
+          <li>
+            <a href="#ropa"><p>Catalogo</p></a>
+          </li>
+          <li>
+            <a href="#Ofertas"><p>Ofertas</p></a>
+          </li>
+          <li>
+            <a href="zapatos"><p>Oferta</p></a>
+          </li>
+
+          <li>
+            <a href="contacto"><p>Contacto</p></a>
+          </li>
+        </ul>
+      </menu>
+      
+      <main class="grid-item main">
+        <div id="perfume" class="color-container">
+          <img src="./assets/img/botas.jpg" alt="" />
+          <h3>botas</h3>
+
+          <button>Comprar</button>
+        </div>
+        <div id="ropa" class="color-container">
+          <img src="./assets/img/botines.jpg" alt="" />
+          <h3>botines</h3>
+
+          <button class="texto2">Comprar</button>
+        </div>
+
+        <div id="accesorios" class="color-container">
+          <img src="./assets/img/zapatillas.jpg" alt="" />
+          <h3>zapatillas</h3>
+
+          <button class="texto2">Comprar</button>
+        </div>
+
+        <div id="zapatos" class="color-container">
+          <img src="./assets/img/sandalias.jpg" alt="" />
+          <h3>sandalias</h3>
+          <button class="texto2">Comprar</button>
+        </div>
+        <div id="perfume" class="color-container">
+            <img src="./assets/img/botas.jpg" alt="" />
+            <h3>botas</h3>
+  
+            <button>Comprar</button>
+          </div>
+          <div id="ropa" class="color-container">
+            <img src="./assets/img/botines.jpg" alt="" />
+            <h3>botines</h3>
+  
+            <button class="texto2">Comprar</button>
+          </div>
+  
+          <div id="accesorios" class="color-container">
+            <img src="./assets/img/zapatillas.jpg" alt="" />
+            <h3>zapatillas</h3>
+  
+            <button class="texto2">Comprar</button>
+          </div>
+  
+          <div id="zapatos" class="color-container">
+            <img src="./assets/img/sandalias.jpg" alt="" />
+            <h3>sandalias</h3>
+            <button class="texto2">Comprar</button>
+          </div>
+      </main>
+      <footer class="grid-item footer">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <h3>Todos los derechos reservados</h3>
+      </footer>
+    </div>
+  </body>
 </html>
