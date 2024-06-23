@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="grid-container">
-      <header >
+      <header class="header" >
         <div class="accordion-container">
             <div class="accordion">
                 <input type="checkbox" id="accordion-item-1" class="accordion-checkbox">
@@ -34,28 +34,15 @@
         </div>
       </header>
       <menu class="grid-item menu">
-        <nav>
-          <i class="fa-solid fa-heart"></i>
-          <h1>calzado</h1>
-        </nav>
-        <ul class="grid-conteiner">
-          <li>
-            <a href="#perfume"><p>Inicio</p></a>
-          </li>
-          <li>
-            <a href="#ropa"><p>Catalogo</p></a>
-          </li>
-          <li>
-            <a href="#Ofertas"><p>Ofertas</p></a>
-          </li>
-          <li>
-            <a href="zapatos"><p>Oferta</p></a>
-          </li>
-
-          <li>
-            <a href="contacto"><p>Contacto</p></a>
-          </li>
-        </ul>
+          <div class="navbar-brand"><i class="fa-solid fa-heart"></i>
+          <h1>calzado</h1></div>
+          <ul class="navbar-menu">
+              <li class="navbar-item"><a href="#">Inicio</a></li>
+              <li class="navbar-item"><a href="#">Catalogo</a></li>
+              <li class="navbar-item"><a href="#">Ofertas</a></li>
+              <li class="navbar-item"><a href="#">Contacto</a></li>
+          </ul>
+          <div class="navbar-toggle"><i class="fa-solid fa-bars"></i></div>
       </menu>
       
       <main class="grid-item main">
@@ -110,6 +97,17 @@
             <button class="texto2">Comprar</button>
           </div>
       </main>
+      <article class="article">
+        <div class="pagination-container">
+          <nav class="pagination">
+              <a class="page-link" href="#">«</a>
+              <a class="page-link" href="#">1</a>
+              <a class="page-link" href="#">2</a>
+              <a class="page-link" href="#">3</a>
+              <a class="page-link" href="#">»</a>
+          </nav>
+      </div>
+      </article>
       <footer class="grid-item footer">
         <div>
           <i class="fa-brands fa-instagram"></i>
