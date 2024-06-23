@@ -265,6 +265,7 @@ footer i {
       "footer  footer";
     grid-template-columns: auto 85%;
     grid-template-rows: 5% 80% 10% 5%;
+    
   }
   menu {
     display: flex;
@@ -276,7 +277,6 @@ footer i {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap top: 10px;
     width: 250px;
     
   }
@@ -301,7 +301,8 @@ footer i {
       "menu main"
       "footer article ";
     grid-template-columns: auto 85%;
-    grid-template-rows: 10% 70% 10%;
+    /* grid-template-rows: 10% 70% 10%; */
+    
   }
   menu {
     background-color: #1a6ebf;
@@ -336,6 +337,9 @@ footer i {
   div img {
     width: 200px;
     height: 200px;
+  }
+  article{
+    padding: 0;
   }
   footer {
     margin: 0;
