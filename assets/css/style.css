@@ -292,6 +292,8 @@ footer i {
   }
   
 }
+
+
 @media (min-width: 1200px) {
  
   .grid-container {
@@ -323,6 +325,7 @@ footer i {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 100px;
   }
   div .color-container {
     background-color: white;
