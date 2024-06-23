@@ -64,7 +64,7 @@ header {
   outline: none;
   text-align: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: medium;
   transition: background-color 0.3s ease;
 }
 
@@ -132,21 +132,17 @@ select {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-
 .navbar-item a:hover {
   background-color: #575757;
 }
-
 .navbar-checkbox {
   display: none;
 }
-
 .navbar-icon {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
-
 main {
   grid-area: main;
   display: grid;
@@ -170,7 +166,6 @@ div img {
   width: 200px;
   height: 200px;
 }
-
 button {
   background-color: rgba(11, 57, 100, 0.87);
   padding: 10px;
@@ -180,7 +175,6 @@ button {
   width: 100px;
   border-radius: 10%;
 }
-
 /* termino de main */
 /* article */
 
@@ -206,19 +200,18 @@ button {
   color: white;
   background-color: rgba(11, 57, 100, 0.87);
   font-style: normal;
-  font-size: x-small;
+  font-size: small;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: end;
+  text-align: center;
 }
 footer i {
   font-size: medium;
   padding: 5px 5px;
 }
-
 @media (min-width: 576px) {
   .grid-container {
     display: grid;
@@ -231,12 +224,12 @@ footer i {
     grid-template-columns: auto;
     grid-template-rows: auto auto 1fr auto auto;
   }
-
   menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: 0;
   }
   main {
     grid-area: main;
@@ -245,19 +238,24 @@ footer i {
     grid-gap: 10px;
     margin-bottom: 20px;
     justify-items: center;
+    
   }
   div .color-container {
     text-align: center;
-    width: 200px;
+    width: 400px;
     margin: auto;
     font-size: x-large;
   }
-  div img {
-    width: 200px;
-    height: 200px;
+   .color-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  div img{
+    width: 400px;
+    height: auto;
   }
 }
-@media (min-width: 992px and max-width:1200px) {
+@media (min-width: 992px) {
   .grid-container {
     display: grid;
     grid-template-areas:
@@ -266,7 +264,7 @@ footer i {
       "header article"
       "footer  footer";
     grid-template-columns: auto 85%;
-    grid-template-rows: 10% 70% 10%;
+    grid-template-rows: 5% 80% 10% 5%;
   }
   menu {
     display: flex;
@@ -277,14 +275,25 @@ footer i {
   main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap top: 10px;
+    width: 250px;
+    
   }
+  div .color-container {
+    width: 250px;
+  }
+  div img {
+    width: 250px;
+    height:250px;
+  }
+  article{
+    padding: 60px;
+  }
+  
 }
 @media (min-width: 1200px) {
-  body {
-    margin: 0 auto;
-  }
+ 
   .grid-container {
     display: grid;
     grid-template-areas:
@@ -300,6 +309,7 @@ footer i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
     list-style: none;
     border: none;
   }
@@ -307,12 +317,26 @@ footer i {
     display: flex;
     flex-direction: column;
   }
+  
   main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-
+  div .color-container {
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div img {
+    width: 200px;
+    height: 200px;
+  }
   footer {
     margin: 0;
     padding: 0;
