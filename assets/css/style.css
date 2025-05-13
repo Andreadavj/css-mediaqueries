@@ -212,7 +212,7 @@ footer i {
   font-size: medium;
   padding: 5px 5px;
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .grid-container {
     display: grid;
     grid-template-areas:
